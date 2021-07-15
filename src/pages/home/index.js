@@ -1,5 +1,7 @@
-import React, {Component}  from 'react';
+import React, {Component}  from 'react'
 import { connect } from 'react-redux'
+import Head from '../../components/head'
+import Footer from '../../components/footer'
 import './home.scss'
 
 class Home extends Component {
@@ -7,7 +9,13 @@ class Home extends Component {
 
   render() {
     return (
-      <div></div>
+      <>
+        <Head/>
+        <div className='cntrHome'>
+       
+        </div>        
+        <Footer/>
+      </>
     )
   }  
 }

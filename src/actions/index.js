@@ -28,11 +28,8 @@ function getProductDetail(product) {
 
 function getCategories() {
   return dispatch => {
-    api.get(`/products/categories`).then(res => {
-      console.log('return categories: ', res)
-      
-      //dispatch(loadingAllCategories())
-
+    api.get(`/products/categories`).then(res => {    
+      dispatch(loadingAllCategories(res.data))
     }).catch((err) => {
       console.error('Error - getCategories: ',err)
     });
