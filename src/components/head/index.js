@@ -31,7 +31,7 @@ class Head extends Component {
       <div className="cntrHead">
         <div className="head">
           <div className="cntrTitle">
-            <img src={logo} title="easy store logo" className="logoHead"></img>
+            <img src={logo} title="easy store logo" alt="easy store logo" className="logoHead"></img>
             <span className="titleHead">Easy Store</span>
           </div>
           <div className="cntrActionsHead">
@@ -40,8 +40,8 @@ class Head extends Component {
         </div>
 
         <div className="navbar">
-          {categories.map((ct) =>
-            <div onClick={this.selectCategory(ct)}>{ct}</div>
+          {categories.map((ct, index) =>
+            <div key={index} onClick={()=>this.selectCategory(ct)}>{ct}</div>
           )}
         </div>
       </div>

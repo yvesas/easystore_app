@@ -1,7 +1,6 @@
 import React, {Component}  from 'react'
 import { connect } from 'react-redux'
 import Head from '../../components/head'
-import Footer from '../../components/footer'
 import './home.scss'
 
 class Home extends Component {
@@ -12,9 +11,8 @@ class Home extends Component {
       <>
         <Head/>
         <div className='cntrHome'>
-       
-        </div>        
-        <Footer/>
+          
+        </div>                
       </>
     )
   }  
